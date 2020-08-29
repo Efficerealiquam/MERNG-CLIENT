@@ -8,7 +8,7 @@ import { setContext } from 'apollo-link-context'/* esto es para que a cada rato
 no estemos enviando el encabezado del Token, es como un Middleware */
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000'
+    uri: 'https://secret-temple-45277.herokuapp.com/'
   });
   
   const authLink = setContext(() => {
